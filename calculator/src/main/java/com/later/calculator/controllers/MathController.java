@@ -26,7 +26,7 @@ public class MathController {
     }
 
     @GetMapping("/results")
-    public List<Double> showResults(@RequestParam("filename") String fileName){
+    public List<String> showResults(@RequestParam("filename") String fileName){
         return mathService.showResults(fileName);
     }
 }
